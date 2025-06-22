@@ -13,7 +13,7 @@ export default function Home() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { data: session } = authClient.useSession() 
+  const { data: session } = authClient.useSession()
 
   const onSubmit = () => {
     authClient.signUp.email({
@@ -58,42 +58,42 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-y-10">
       <div className="p-4 flex flex-col gap-y-4">
-        <Input 
-          placeholder="name" 
-          value={name} 
-          onChange={(e) => setName(e.target.value)} 
+        <Input
+          placeholder="name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
         />
-        <Input 
-          placeholder="email" 
-          value={email} 
-          onChange={(e) => setEmail(e.target.value)} 
+        <Input
+          placeholder="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
-        <Input 
-          placeholder="password" 
-          type="password" 
-          value={password} 
-          onChange={(e) => setPassword(e.target.value)} 
+        <Input
+          placeholder="password"
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
         />
         <Button onClick={onSubmit}>
           Create User
-        </Button>     
+        </Button>
       </div>
 
-        <div className="p-4 flex flex-col gap-y-4">
-        <Input 
-          placeholder="email" 
-          value={email} 
-          onChange={(e) => setEmail(e.target.value)} 
+      <div className="p-4 flex flex-col gap-y-4">
+        <Input
+          placeholder="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
-        <Input 
-          placeholder="password" 
-          type="password" 
-          value={password} 
-          onChange={(e) => setPassword(e.target.value)} 
+        <Input
+          placeholder="password"
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
         />
         <Button onClick={onLogin}>
           Login
-        </Button>     
+        </Button>
       </div>
     </div>
   );
