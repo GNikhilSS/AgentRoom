@@ -79,7 +79,7 @@ export default function Home() {
         </Button>     
       </div>
 
-        <div className="p-4 flex flex-col gap-y-4">
+      <div className="p-4 flex flex-col gap-y-4">
         <Input 
           placeholder="email" 
           value={email} 
