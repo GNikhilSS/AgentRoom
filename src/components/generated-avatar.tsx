@@ -32,8 +32,8 @@ export const GeneratedAvatar = ({
     }
 
     return (
-        <Avatar className={cn(className)}>
-            <AvatarImage src={avatar.toDataUri()} alt="Avatar" />
+        <Avatar>
+            <AvatarImage src={avatar.toDataUri()} className={cn(className)} alt="Avatar" />
             <AvatarFallback>{seed.charAt(0).toUpperCase()}</AvatarFallback>
         </Avatar>
     )
