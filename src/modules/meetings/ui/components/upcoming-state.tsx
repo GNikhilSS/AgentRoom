@@ -23,6 +23,7 @@ export const UpcomingState = ({
                 description="Once you start this meeting, a summary will appear here"
             />
             <div className="flex flex-col-reverse lg:flex-row lg:justify-center items-center gap-2 w-full">
+                {/* He removed cause no meaning  */}
                 <Button
                     variant="secondary"
                     className="w-full lg:w-auto"
