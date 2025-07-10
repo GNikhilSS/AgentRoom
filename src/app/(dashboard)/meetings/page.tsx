@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 import { Suspense } from "react";
 import { ErrorBoundary } from "react-error-boundary";

@@ -1,3 +1,5 @@
+"use client";
+
 import { GeneratedAvatar } from "@/components/generated-avatar";
 import { 
     CommandResponsiveDialog, 
@@ -7,7 +9,7 @@ import {
     CommandGroup,
     CommandEmpty,
 } from "@/components/ui/command";
-import { trpc } from "@/trpc/server";
+import { useTRPC } from "@/trpc/client";
 import { useQuery } from "@tanstack/react-query";
 import { useRouter } from "next/router";
 import { Dispatch, SetStateAction, useState } from "react";
@@ -20,6 +22,7 @@ interface Props {
 export const DashboardCommand = ({open, setOpen}: Props) => {
     const router = useRouter();
     const [search, setSearch] = useState("");
+    const trpc = useTRPC();
     const meetings = useQuery(
         trpc.meetings.getMany.queryOptions({
             search,
