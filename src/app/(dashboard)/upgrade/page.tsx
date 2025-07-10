@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { auth } from "@/lib/auth";
 import { UpgradeView, UpgradeViewError, UpgradeViewLoading } from "@/modules/premium/ui/views/upgrade-view";
 import { getQueryClient, trpc } from "@/trpc/server"

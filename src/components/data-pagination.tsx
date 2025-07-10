@@ -12,10 +12,10 @@ export const DataPagination = ({
     totalPages, 
     onPageChange 
 }: Props) => {
-    const handlePageChange = (newPage: number) => {
-        if (newPage < 1 || newPage > totalPages) return;
-        onPageChange(newPage);
-    };
+    // const handlePageChange = (newPage: number) => {
+    //     if (newPage < 1 || newPage > totalPages) return;
+    //     onPageChange(newPage);
+    // };
 
     return (
         <div className="flex items-center justify-between">

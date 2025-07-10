@@ -149,7 +149,7 @@ export const CompletedState = ({ data }: Props) => {
                                             <code className="bg-gray-100 px-1 py-0.5 rounded" {...props} />
                                         ),
                                         blockquote: (props) => (
-                                            <blockquote className="border-l-4 pl-4 italic my-4" />
+                                            <blockquote className="border-l-4 pl-4 italic my-4" {...props}/>
                                         ),
                                     }}
                                 >

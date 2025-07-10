@@ -83,7 +83,7 @@ export const DashboardUserButton = () => {
                         </Button>
                         <Button
                           variant="outline"
-                          onClick={() => {onLogout}}
+                          onClick={onLogout}
                         >
                             <LogOutIcon className="size-4 text-black"/>
                                 Logout
@@ -135,7 +135,6 @@ export const DashboardUserButton = () => {
                 <DropdownMenuItem
                   className="cursor-pointer flex items-center justify-between"
                   onClick={onLogout}
-                  onClick={() => authClient.customer.portal()}
                 >
                     Logout 
                     <LogOutIcon className="size-4"/>    
